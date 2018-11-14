@@ -18,7 +18,7 @@ public class Main {
 
         FrogSimulation sim = new FrogSimulation(24, 5);
 
-        for (int i = 0; i < hopSequences.length; i++)
+        for (int i = 0; i < hopSequences.length; i++) 
         {
             //sim.testHops = hopSequences[i];
             //sim.nextHopIndex = 0;
