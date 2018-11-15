@@ -40,13 +40,15 @@ public class FrogSimulation {
         return false;
     }
 
-    public double runSimulations(int num){
+    public double runSimulations(int[][] arr){
         int success = 0;
-        for(int i = 0; i < num; i++){
+        for(int i = 0; i < arr.length; i++) {
+            this.nextHopIndex = 0;
+            this.testHops = arr[i];
             if(simulate()){
                 success++;
             }
         }
-        return(double)success/num;
+        return(double)success/arr.length;
     }
 }

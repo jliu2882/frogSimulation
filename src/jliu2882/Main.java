@@ -24,6 +24,6 @@ public class Main {
 
         sim.testHops = hopSequences[0];
         sim.nextHopIndex = 0;
-        System.out.println(sim.runSimulations(10));
+        System.out.println(sim.runSimulations(hopSequences));
     }
 }
